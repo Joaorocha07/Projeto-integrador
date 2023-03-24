@@ -1,0 +1,128 @@
+header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 0;
+  }
+
+  .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagem img {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+
+  .menu nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu nav ul li {
+    margin-left: 20px;
+  }
+  
+  .menu nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  .menu nav ul li a {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .btn-entrar {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-entrar:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .btn-criar {
+    background-color: #7843E6;
+    border: 2px solid #7843E6;;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: all 0.2s ease-in-out;
+    display: block; 
+    height: 100%; 
+  }
+  
+  .btn-criar:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;;
+    color: #000000;
+  } 
+
+  /* Main -> section */
+  .main {
+    /* background-image: url('../../img/imagem-de-fundo.jpg'); */
+    background-image: url('../../img/teste.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 91.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-container {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+  }
+
+  .main-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .main-container a {
+    text-decoration: none;
+  }
+
+  .btn-saiba-mais {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-saiba-mais:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }

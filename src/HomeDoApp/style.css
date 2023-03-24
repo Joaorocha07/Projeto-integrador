@@ -1,0 +1,214 @@
+/* .container-principal {
+    background-image: url(../../img/fundo-tela-inicial.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #000000;
+    text-shadow: 1px 1px 2px #c2a4fdd3;
+}
+p {
+    font-size: 2rem;
+    text-align: center;
+    color: #000000;
+    text-shadow: 1px 1px 2px #c2a4fdd3;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+} */
+
+/* Comece aqui */
+
+body {
+    background-color: #121212;
+    color: #FFF;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1px solid #2f3336;
+    transition: all 0.35s;
+}
+
+.menu-header {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.logo-img {
+    object-fit: cover;
+    width: 38px;
+    min-height: 38px;
+    border-radius: 50%;
+    transition: transform 0.4s;
+    margin-left: 10px;
+}
+
+.logo-img:hover{
+    transform: scale(1.5);
+}
+
+.menu button {
+    height: 60px;
+    border: 0;
+    background-color: transparent;
+    color: #FFF;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.menu button > span {
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    gap: 12px;
+    padding: 0 16px 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.menu button:hover > span {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.menu button i {
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+}
+
+.menu button span {
+    font-size: 16px;
+}
+
+.menu > nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.main {
+    margin-left: 250px;
+    margin-right: 6px;
+    overflow: hidden;
+    
+}
+
+/* Ajustando o menu com apenas os icones */
+@media (width < 920px) {
+    .menu {
+        width: 72px;
+    }
+
+    .menu button > span {
+        width: 50px;
+    }
+
+    .menu button > span > span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .main {
+        transition: margin 0.35s;
+        margin-left: 80px;
+    }
+}
+
+/* Ajustando para versão mobile */
+.button-mobile {
+    display: none;
+    align-self: flex-start;
+    align-items: center;
+    margin: 16px;
+    background: transparent;
+    color:#FFF;
+    border: 0;
+}
+
+.button-mobile span {
+    font-size: 24px;
+    margin-left: 8px;
+}
+
+.button-close span i {
+    font-size: 42px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile-active {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   width: 100vw;
+   height: 100vh; 
+   background-color: #000;
+   z-index: 99;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+.menu-mobile-active button {
+    background: transparent;
+    border: 0;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.menu-mobile-active button > span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.mobile {
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: none;
+    }
+
+    .button-mobile {
+        display: flex;
+    }
+
+    .main {
+        margin-left: 6px;
+    }
+
+}

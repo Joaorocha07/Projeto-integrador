@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../style/style-global.css">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Tela Inicial</title>
+</head>
+<body>
+    <!-- <div class="container-principal">
+        <h1>Site em Construção</h1>
+	    <p>Em breve teremos um site personalizado e completo para você!</p>
+    </div> -->
+
+   <aside class="menu">
+        <header class="menu-header">
+            <img class="logo-img" src="https://avatars.githubusercontent.com/u/113738853?v=4" alt="Foto do usuario">
+        </header>
+
+        <nav class="">
+            <button>
+                <span><i class="material-symbols-outlined">home</i><span>Home</span></span>
+            </button>
+
+            <button>
+                <span><i class="material-symbols-outlined">tag</i><span>Pesquisar</span></span>
+            </button>
+            
+            <button>
+                <span><i class="material-symbols-outlined">email</i><span>Email</span></span>
+            </button>
+            
+            <button>
+                <span><i class="material-symbols-outlined">person</i><span>Perfil</span></span>
+            </button>
+
+        </nav>
+   </aside>
+
+   <!-- Criando menu mobile -->
+   <button class="button-mobile" onclick="alternarMenu()">
+        <i class="material-symbols-outlined">menu</i>
+        <span>Menu</span>
+   </button>
+
+    <nav class="menu-mobile" id="menu-mobile">
+        <button class="button-close" onclick="alternarMenu()">
+            <span>
+                <i class="material-symbols-outlined">close</i>
+            </span>
+        </button>
+        
+        <button>
+            <span><i class="material-symbols-outlined">home</i><span class="mobile">Home</span></span>
+        </button>
+
+        <button>
+            <span><i class="material-symbols-outlined">tag</i><span class="mobile">Pesquisar</span></span>
+        </button>
+        
+        <button>
+            <span><i class="material-symbols-outlined">email</i><span class="mobile">Email</span></span>
+        </button>
+        
+        <button>
+            <span><i class="material-symbols-outlined">person</i><span class="mobile">Perfil</span></span>
+        </button>
+   </nav>
+
+    <main class="main">
+        <h1>Bem vindo</h1>
+        <span>rocha.joao.victor.50@gmail.com</span>
+   </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style/style-global.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div class="container-form">
+        <form action="" id="form">
+            <h2>Cadastre-se</h2>
+            <div id="mensagem"></div>
+
+            <div class="textfield">
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" name="nome" class="required" oninput="nomeValidacao()">
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+
+            <div class="textfield">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="required" oninput="emailValidacao()">
+                <span class="span-required">Digite um email válido</span>
+            </div>
+
+            <div class="textfield">
+                <label for="email">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" class="required" oninput="telefoneValidacao()" maxlength="15">
+                <span class="span-required">Digite um número válido</span>
+            </div>
+
+            <div class="textfield">
+                <label for="password">Senha:</label>
+                <input type="password" id="senha" name="senha" class="required" oninput="senhaPrincipalValidacao()">
+                <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+            </div>
+          
+            <div class="textfield">
+                <label for="confirm-password">Confirme a senha:</label>
+                <input type="password" id="confirme-senha" name="confirme-senha" class="required" oninput="compararSenhas()">
+                <span class="span-required">Senhas devem ser compatíveis</span>
+            </div>
+            
+            <div class="textfield">
+                <label for="genero">Sexo:</label>
+                <select id="genero" name="genero" oninput="sexoValidacao()">
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <span class="error">Selecione uma opção!</span>
+            </div>
+          
+            <button type="submit">Cadastrar</button>
+            <div class="google-login">
+                <a href="#">
+                    <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Logo">
+                    Cadastrar com o Google
+                </a>
+            </div>
+        </form>
+    </div> 
+    <script src="./script.js"></script>  
+    <script src="../../script/mod.validacao-de-dados.js"></script>  
+</body>
+</html>

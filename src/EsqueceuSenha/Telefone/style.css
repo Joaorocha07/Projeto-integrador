@@ -1,0 +1,119 @@
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container-form form {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container-form h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .textfield {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .container-form label {
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+    width: 100%;
+    background-color: #f9f9f9b2;
+    padding: 7px;
+  }
+  
+  input:focus {
+    border-color: #7843e6;
+  }
+  
+  .container-form select {
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #0062cc;
+  }
+
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .esqueceu-senha {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .esqueceu-senha a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #757575;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .esqueceu-senha a:hover {
+    background-color: #f5f5f5;
+    border-color: #bdbdbd;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: #343a40;
+  }
+  
+  .textfield {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin: 1rem;
+  }
+  
+  .textfield input:focus {
+    border-color: #7843e6;
+  }
+  
+  #btn-reenviar[disabled] {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    

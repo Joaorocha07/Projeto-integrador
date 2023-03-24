@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../style/style-global.css">
+    <title>Recuperação de senha</title>
+</head>
+<body>
+
+    <div id="form-email" class="container-form">
+        <form>
+            <h1>Verificação por Telefone</h1>
+            <p>Por favor, digite o seu telefone para enviarmos o código de verificação:</p>
+
+            <div class="textfield">
+                <label for="email">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required maxlength="15">
+            </div>
+    
+            <button type="button" id="btn-enviar">Enviar</button>
+        </form>
+    </div>
+
+    <div id="form-codigo" class="container-form text-center" style="display: none;">
+        <form>
+            <h1>Verificação por telefone</h1>
+            <p>Enviamos um código para seu telefone. Por favor, verifique se chegou. Se não chegou, aguarde um minuto para pedir o código novamente.</p>
+    
+            <div class="textfield">
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" maxlength="6" pattern="[0-9]{6}">
+            </div>
+    
+            <button type="button" id="btn-verificar">Verificar</button>
+            <p>Não recebeu o código? Aguarde <span id="tempo-restante"></span> segundos para pedir um novo código.</p>
+            <button type="button" id="btn-reenviar">Reenviar código</button>
+        </form>
+    </div> 
+
+    <div id="form-nova-senha" class="container-form" style="display: none;">
+        <form>
+          <h1>Mudando a senha</h1>
+          <div class="textfield">
+            <label for="nova-senha">Nova senha:</label>
+            <input type="password" id="nova-senha" name="nova-senha" required>
+          </div>
+          <div class="textfield">
+            <label for="confirmar-senha">Confirmar senha:</label>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+          </div>
+          <button type="button" id="btn-salvar-senha"><a href="../../Login/index.html">Salvar</a></button>
+        </form>
+    </div>
+    
+    <script src="./script.js"></script>
+
+</body>
+</html>
